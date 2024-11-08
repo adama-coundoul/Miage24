@@ -13,4 +13,4 @@ En réalisant ces exercices, j'ai constaté que le double dispatch rend le code 
 
 ## Mon kata : 
 
-Cette semaine, je suis en train de corriger le déplacement des pions en diagonale pour capturer d'autres pièces. Cependant, j'ai rencontré un problème : dans ma version actuelle, les pions capturent par erreur les pièces directement devant eux, au lieu de se limiter aux captures en diagonale comme le permettent les règles du jeu.  
+Cette semaine, j'ai réussi à corriger le déplacement des pions en diagonale pour capturer d'autres pièces. Cependant, il me reste à gérer le mouvement "En passant". 
