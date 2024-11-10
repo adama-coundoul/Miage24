@@ -29,3 +29,28 @@ Dans le chapitre 11 du MOOC, les classes EAddition et EMultiplication avaient ch
 
 Dans le projet d'échecs, un exemple pertinent est la méthode targetSquare, qui agit comme un Template Method pour déterminer les cases cibles possibles pour chaque pièce. Elle utilise le hook targetSquareLegal, que chaque sous-classe (comme MyPawn, MyRook ou MyKing) redéfinit pour adapter la logique de mouvement de chaque type de pièce. 
 
+# COUNDOUL Adama
+
+## Look in the chess game for template methods
+
+ A template method specifies a skeleton with hooks. Hooks are places to be customized by subclasses.
+ 
+### How can you identify them?
+
+By checking the class hierarchies and look about methods in the abstract class who call another (hook) methods which is defined in the subclasses. A template method sets the context
+ Hooks specify variations.
+
+ ### Exemple in the Chess Game 
+ 
+```
+ targetSquares
+	^ self targetSquaresLegal: false
+```
+
+This method is a template method because she calls a hook method targetSquaresLegal which is defined in each sublasses.
+
+
+
+ 
+
+
