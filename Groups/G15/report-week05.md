@@ -40,7 +40,7 @@ Dans le projet d'échecs, un exemple pertinent est la méthode targetSquare, qui
 By checking the class hierarchies and look about methods in the abstract class who call another (hook) methods which is defined in the subclasses. A template method sets the context
  Hooks specify variations.
 
- ### Exemple in the Chess Game 
+ ### Example in the Chess Game 
  
 ```
  targetSquares
