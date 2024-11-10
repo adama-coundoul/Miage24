@@ -57,4 +57,36 @@ I understand with this method that "selection contents" return the piece selecte
 ### Next Steps
 Finish the moveToInteractiveVersion: method to manage the player choice .
 
+# Dahouane Youssra
+
+### Double Dispatch
+
+J'ai appris comment fonctionne le double dispatch, un concept qui permet de choisir dynamiquement la méthode à appeler en fonction de deux objets en interaction. Contrairement au dispatch simple, où un seul objet décide de l'opération à effectuer, le double dispatch permet à deux objets de collaborer pour choisir la méthode appropriée. Ainsi, au lieu d'utiliser des conditions imbriquées, il gère directement les interactions entre objets et organise le code de manière à ce que chaque objet soit responsable de ses propres interactions. 
+
+### Exercices
+
+J’ai réalisé l’exercice du jeu « PaperStoneScissors », accessible sur le lien suivant : https://github.com/youssraaa/PaperScissorsStone. Pour implémenter le double dispatch, j’ai défini trois classes principales : Stone, Paper et Scissors. Dans chacune de ces classes, j’ai implémenté une méthode vs: qui prend en paramètre un autre objet (par exemple Stone vs: Paper). Dans cette méthode, l’objet appelant délègue l’interaction en appelant une méthode spécifique sur l’autre objet, comme playAgainstStone, playAgainstPaper ou playAgainstScissors, selon le type de l'objet reçu. Cela permet de déterminer dynamiquement le gagnant en fonction des objets impliqués.
+
+### Projet d'échecs
+
+Pratiquer le double dispatch m’a permis d’avancer dans mon kata de refactorisation du rendu des pièces, en l'appliquant à la méthode renderPieceOn. J’ai créé des sous-classes pour les pièces afin de distinguer les pièces noires (par exemple, MyBlackBishop) des pièces blanches (comme MyWhiteBishop), et j’ai fait de même pour les cases en créant les sous-classes MyWhiteChessSquare et MyBlackChessSquare. J’ai ensuite implémenté la méthode renderPieceOn pour chaque couleur de pièce. Par exemple : 
+
+ #### MyBlackBishop : 
+ 
+```
+renderPieceOn: aSquare
+
+	^ aSquare renderBlackBishop
+```
+#### MyWhiteBishop : 
+
+```
+renderPieceOn: aSquare
+
+	^ aSquare renderWhiteBishop
+```
+La méthode renderPieceOn permet de déléguer le rendu des pièces à la case correspondante, en fonction de la couleur de la pièce et de la case. Je vais maintenant définir les méthodes qui renverront les caractères appropriés pour chaque type de pièce.
+
+
+
 
