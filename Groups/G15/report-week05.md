@@ -10,3 +10,22 @@ Un Hook est une méthode dans la superclasse, souvent vide ou avec un comporteme
 
 ## Exemple dans le projet d’échecs
 Dans le projet d’échecs, on retrouve ces concepts dans la méthode targetSquare. Elle agit comme une Template Method qui définit la logique générale pour cibler une case. La méthode targetSquareLegal est utilisée comme un Hook et redéfinie dans chaque sous-classe pour adapter le comportement de chaque type de pièce.
+
+# Dahouane Youssra 
+
+## Homework 
+
+### Template Method
+
+Template Method est un design pattern qui définit la structure d'un algorithme dans une méthode de la superclasse, tout en déléguant certaines étapes spécifiques aux sous-classes. Ce pattern facilite la réutilisation du code et permet des personnalisations sans changer la structure globale de l'algorithme.
+
+### Hooks
+
+Les hooks sont des méthodes définies dans la superclasse qui peuvent être réutilisées ou personnalisées par les sous-classes. Elles permettent à ces dernières d'intervenir à des points spécifiques de l'algorithme défini par Template Method.
+
+### Exemples 
+
+Dans le chapitre 11 du MOOC, les classes EAddition et EMultiplication avaient chacune une méthode printOn presque identique, qui se distinguait uniquement par l'opérateur utilisé (+ pour EAddition et * pour EMultiplication). Pour éviter cette duplication de code, une superclasse, EBinaryExpression, a été créée. Elle contient une méthode printOn qui sert de template method, et définit la structure générale de l'affichage des expressions. Cette méthode appelle un hook, que chaque sous-classe (EAddition et EMultiplication) doit implémenter pour fournir son propre opérateur.
+
+Dans le projet d'échecs, un exemple pertinent est la méthode targetSquare, qui agit comme un Template Method pour déterminer les cases cibles possibles pour chaque pièce. Elle utilise le hook targetSquareLegal, que chaque sous-classe (comme MyPawn, MyRook ou MyKing) redéfinit pour adapter la logique de mouvement de chaque type de pièce. 
+
