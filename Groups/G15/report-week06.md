@@ -69,7 +69,7 @@ J’ai réalisé l’exercice du jeu « PaperStoneScissors », accessible sur le
 
 ### Projet d'échecs
 
-Pratiquer le double dispatch m’a permis d’avancer dans mon kata de refactorisation du rendu des pièces, en l'appliquant à la méthode renderPieceOn. J’ai créé des sous-classes pour les pièces afin de distinguer les pièces noires (par exemple, MyBlackBishop) des pièces blanches (comme MyWhiteBishop), et j’ai fait de même pour les cases en créant les sous-classes MyWhiteChessSquare et MyBlackChessSquare. J’ai ensuite implémenté la méthode renderPieceOn pour chaque couleur de pièce. Par exemple : 
+Pratiquer le double dispatch m’a permis d’avancer dans mon kata de refactorisation du rendu des pièces, en l'appliquant à la méthode renderPieceOn. J’ai créé des sous-classes pour les pièces afin de distinguer les pièces noires des pièces blanches, et j’ai fait de même pour les cases en créant les sous-classes MyWhiteChessSquare et MyBlackChessSquare. J’ai ensuite implémenté la méthode renderPieceOn pour chaque couleur de pièce. Par exemple : 
 
  #### MyBlackBishop : 
  
@@ -85,7 +85,7 @@ renderPieceOn: aSquare
 
 	^ aSquare renderWhiteBishop
 ```
-La méthode renderPieceOn permet de déléguer le rendu des pièces à la case correspondante, en fonction de la couleur de la pièce et de la case. Je vais maintenant définir les méthodes qui renverront les caractères appropriés pour chaque type de pièce.
+Je vais maintenant définir les méthodes qui renverront les caractères appropriés. 
 
 
 
