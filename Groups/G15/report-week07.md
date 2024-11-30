@@ -18,7 +18,7 @@ Composite permet de structurer des objets en hiérarchies arborescentes, où cha
 
 ## Visitor 
 
-Visitor permet d'ajouter de nouvelles opérations à des objets d'une structure sans modifier les objets eux-mêmes. L'idée est de séparer l'algorithme de l'objet sur lequel il opère. Cela se fait en créant un visitor qui contient des méthodes pour traiter chaque type d'objet d'une hiérarchie. Dans un système de gestion de produits, plutôt que d'intégrer les comportements directement dans les classes des produits, on délègue des opérations comme l'application d'une remise ou le calcul des taxes à des visiteurs. Par exemple, un DiscountVisitor applique une remise, tandis qu'un TaxVisitor calcule la taxe.
+Visitor permet d'ajouter de nouvelles opérations à des objets d'une structure sans modifier les objets eux-mêmes. L'idée est de séparer l'algorithme de l'objet sur lequel il opère. Cela se fait en créant un visitor qui contient des méthodes pour traiter chaque type d'objet. Dans un système de gestion de produits, plutôt que d'intégrer les comportements directement dans les classes des produits, on délègue des opérations comme l'application d'une remise ou le calcul des taxes à des visiteurs. Par exemple, un DiscountVisitor applique une remise, tandis qu'un TaxVisitor calcule la taxe.
 
 ## Visitor et Double Dispatch
 
