@@ -28,6 +28,38 @@ Par exemple, une classe TextEditor délègue l'exécution d'une méthode format 
 
 ## Kata (Refactorisation du rendu des pièces)
 
-J’ai créé des méthodes dans les classes MyBlackChessSquare et MyWhiteChessSquare qui renvoient les caractères appropriés pour chaque pièce (renderWhiteBishop, renderBlackKnight, renderWhiteKing, etc). Ensuite, j’ai modifié la méthode initialize dans MyFenParser pour associer chaque symbole de pièce à sa couleur et à sa classe appropriée. 
+J’ai créé des méthodes dans les classes MyBlackChessSquare et MyWhiteChessSquare qui renvoient les caractères appropriés pour chaque pièce (renderWhiteBishop, renderBlackKnight, renderWhiteKing, etc). Ensuite, j’ai modifié la méthode initialize dans MyFenParser pour associer chaque symbole de pièce à sa couleur et à sa classe appropriée.
+
+# COUNDOUL Adama
+
+## Kata (Promotion du pion)
+
+1. Work Done:
+   
+Implemented moveToInteractiveVersion:
+Added a feature to let the user promote a pawn when it reaches the last rank.
+Created a dialog box where the user can choose between "Queen," "Rook," "Bishop," or "Knight."
+
+2. Next Steps:
+
+- Write Tests:
+
+Test the promotion feature in different situations (valid choices, closing the dialog without choosing, promotion on the first and last ranks, etc.).
+Make sure promotion works for both black and white pawns.
+
+- Fix Screen Opening:
+
+Make sure the dialog box opens directly on top of the game interface.
+Use tools that work with Pharo 12, like Blocs and Toplo .
+
+- Refactor the Code:
+
+Make the code easier to read and improve its structure.
+Create a separate method for making promoted pieces.
+
+- Merge the promotion feature with the rest of the game.
+Fix any problems that come up when merging the code.
+
+
 
 
