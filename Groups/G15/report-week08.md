@@ -37,8 +37,9 @@ J’ai créé des méthodes dans les classes MyBlackChessSquare et MyWhiteChessS
 1. Work Done:
    
 Implemented moveToInteractiveVersion:
-Added a feature to let the user promote a pawn when it reaches the last rank.
-Created a dialog box where the user can choose between "Queen," "Rook," "Bishop," or "Knight."
+
+- Added a feature to let the user promote a pawn when it reaches the last rank.
+- Created a dialog box where the user can choose between "Queen," "Rook," "Bishop," or "Knight."
 
 2. Next Steps:
 
@@ -58,6 +59,7 @@ Make the code easier to read and improve its structure.
 Create a separate method for making promoted pieces.
 
 - Merge the promotion feature with the rest of the game.
+  
 Fix any problems that come up when merging the code.
 
 
