@@ -31,10 +31,10 @@ Le pattern Visitor utilise le double dispatch pour déterminer comment un objet 
 Composite is a design pattern for modeling tree structures that represent part-whole hierarchies and enables clients to handle both individual objects (leaves) and groups of objects (composites) uniformly.
 
 The composite participants are : 
-Client : manipulates objects in the composition through the Component interface
-Component : declares the interface for objects in the composition
-Leaf: represents leaf objects in the composition
-Composite : defines behavior for components with children via a polymorphic API 
+- Client : manipulates objects in the composition through the Component interface
+- Component : declares the interface for objects in the composition
+- Leaf: represents leaf objects in the composition
+- Composite : defines behavior for components with children via a polymorphic API 
 
 Essence of the Composite Design Pattern
 - Leaves and composites share the same API.
@@ -46,10 +46,11 @@ Essence of the Composite Design Pattern
 The Visitor design pattern enables performing operations on structured object graphs (like composite) without modifying their classes. 
 
 Essence of the Visitor Design Pattern
--A Visitor represents an operation (e.g., evaluation, printing).
--Visitors are decoupled from the domain objects they apply to.
--Domain objects define an acceptVisitor method, which delegates the operation to the -appropriate visitor.
--This approach ensures modularity and facilitates extensibility.
+
+- A Visitor represents an operation (e.g., evaluation, printing).
+- Visitors are decoupled from the domain objects they apply to.
+- Domain objects define an acceptVisitor method, which delegates the operation to the -appropriate visitor.
+- This approach ensures modularity and facilitates extensibility.
 
 
 
