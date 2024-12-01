@@ -46,10 +46,9 @@ Essence of the Composite Design Pattern
 The Visitor design pattern enables performing operations on structured object graphs (like composite) without modifying their classes. 
 
 Essence of the Visitor Design Pattern
-
 - A Visitor represents an operation (e.g., evaluation, printing).
 - Visitors are decoupled from the domain objects they apply to.
-- Domain objects define an acceptVisitor method, which delegates the operation to the -appropriate visitor.
+- Domain objects define an acceptVisitor method, which delegates the operation to the appropriate visitor.
 - This approach ensures modularity and facilitates extensibility.
 
 
