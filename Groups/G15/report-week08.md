@@ -15,20 +15,24 @@ J'ai également commencé à réfléchir à la manière d'implémenter le dernie
 
 # Dahouane Youssra
 
-Cette semaine, nous avons étudié deux concepts essentiels : l'héritage et la délégation.
-
-## Héritage
-
-L’héritage permet de créer une hiérarchie de classes où une sous classe hérite des caractéristiques et comportements d’une super-classe. Il facilite la réutilisation du code en permettant aux sous-classes de spécialiser ou étendre les fonctionnalités. Par exemple, si une super-classe TextEditor définit un formatage générique, ses sous-classes comme FastFormattingTextEditor ou SlowFormattingTextEditor peuvent implémenter des formats spécifiques.
-
-## Délégation
-
-La délégation permet à une classe de confier une tâche à un autre objet. Cela permet de modifier le comportement sans modifier la classe principale.
-Par exemple, une classe TextEditor délègue l'exécution d'une méthode format à un objet spécialisé (FastFormatter, SlowFormatter, etc.). L’objet délégué peut être remplacé à tout moment.
-
 ## Kata (Refactorisation du rendu des pièces)
 
-J’ai créé des méthodes dans les classes MyBlackChessSquare et MyWhiteChessSquare qui renvoient les caractères appropriés pour chaque pièce (renderWhiteBishop, renderBlackKnight, renderWhiteKing, etc). Ensuite, j’ai modifié la méthode initialize dans MyFenParser pour associer chaque symbole de pièce à sa couleur et à sa classe appropriée.
+1.	Création des méthodes de rendu :
+   
+J’ai ajouté des méthodes dans les classes MyBlackChessSquare et MyWhiteChessSquare qui renvoient les caractères appropriés pour chaque pièce (renderWhiteBishop, renderBlackKnight, renderWhiteKnight, etc). 
+
+2.	Modification de initializeSquares dans MyChessBoard :
+   
+J’ai remplacé les références aux couleurs noir et blanc par mes deux nouvelles classes MyBlackChessSquare et MyWhiteChessSquare.
+
+3.	Modification de initialize dans MyFenParser :
+   
+J’ai modifié le dictionnaire pour associer chaque symbole de pièce à sa couleur et à sa classe appropriée.
+
+4.	Tests :
+   
+J’ai écrit des tests pour vérifier que les bons caractères correspondant à chaque pièce s'affichent correctement en fonction de la couleur de la case et de la pièce.
+
 
 # COUNDOUL Adama
 
