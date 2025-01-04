@@ -21,3 +21,15 @@ La délégation permet à une classe de confier une tâche à un autre objet. Ce
 
 ## Héritage vs Délégation
 La délégation est plus flexible et modulaire que l'héritage car elle repose sur une relation dynamique entre objets, permettant des changements à l'exécution et une réutilisation ciblée du comportement. En revanche, l'héritage est une relation statique définie à la compilation, ce qui le rend moins adaptable aux modifications, bien qu'il simplifie la hiérarchie des classes.
+
+# AIT YAHIA Maya 
+
+## Héritage vs Délégation
+Cette semaine, nous avons fait deux approches complémentaires en programmation orientée objet : l’héritage et la délégation.
+
+L’héritage établit une relation statique et hiérarchique entre les classes, où une sous-classe hérite des propriétés et comportements d’une super-classe. Cette relation, souvent décrite comme "est-un" (is-a), permet une réutilisation du code et une organisation claire en hiérarchie. Cependant, l’héritage introduit une certaine rigidité : les comportements sont définis à la compilation et toute modification dans une super-classe peut affecter l’ensemble des sous-classes.
+
+La délégation, en revanche, repose sur une relation dynamique où une classe confie une tâche ou un comportement à un autre objet. Cette relation, qualifiée de "a-un" (has-a), offre une flexibilité accrue, car les comportements peuvent être modifiés ou remplacés à l’exécution. Contrairement à l’héritage, la délégation favorise un couplage faible, ce qui rend le code plus modulaire et facilite l’ajout ou la modification de fonctionnalités sans toucher à la classe principale. 
+
+Conclusion : L’héritage privilégie la simplicité et la réutilisation dans des structures fixes, tandis que la délégation est plus adaptée aux systèmes évolutifs nécessitant des comportements dynamiques.
+
