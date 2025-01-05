@@ -15,3 +15,9 @@ For the pawn promotion, the promotion feature is working. Now, I need to merge i
 Cette semaine, nous avons préparé une présentation des katas, qui s’est révélée très utile. 
 Comme presque toute la classe a choisi le même kata, "les mouvements des pions", cela nous a permis de comparer nos solutions, d’échanger des idées et de nous inspirer mutuellement.
 
+## DAHOUANE Youssra
+
+### Présentation des Katas : 
+
+Cette semaine, j'ai présenté en classe mon kata intitulé "La refactorisation du rendu des pièces".  J'ai expliqué mon code et la façon dont j'ai implémenté le double dispatch. La majorité de mes camarades avaient opté pour le même kata, ce qui nous a permis d'examiner ensemble nos solutions et de partager nos approches. Les retours du prof ont également été très utiles pour clarifier certains points et améliorer nos solutions.
+
